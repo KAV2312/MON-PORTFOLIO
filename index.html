@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ahou Valerie Kouakou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <img src="moi.jpg" alt="Ahou Valerie Kouakou" class="profile-img">
+            <h1>AHOU VALERIE KOUAKOU</h1>
+            <p class="bio">Passionnée par le code et diplômée de SheIsTheCode, je conçois des expériences numériques performantes en HTML, CSS et JavaScript.</p>
+        </div>
+    </header>
+
+    <section class="skills">
+        <div class="container">
+            <div class="tags">
+                <span>HTML5</span><span>CSS3</span><span>Javascript</span>
+                <span>WordPress</span><span>React js</span><span>React Native (Expo)</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <div class="grid" id="project-grid">
+                <div class="card">
+                    <img src="oheema-thumb.jpg" alt="Oheema" class="card-img card-img-oheema">
+                    <div class="card-body">
+                        <h3>OHEEMA</h3>
+                        <p class="tech">HTML, CSS, JS</p>
+                        <p>Boutique en ligne de pagnes ghanéens pour sublimer vos cérémonies.</p>
+                        <a href="https://kav2312.github.io/OHEEMA-Portfolio/" target="_blank" rel="noopener noreferrer" class="btn-card">Voir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="tetris-thumb.jpg" alt="Tetris" class="card-img">
+                    <div class="card-body">
+                        <h3>TETRIS</h3>
+                        <p class="tech">JS, Expo</p>
+                        <p>Application mobile de jeu de Tetris classique revisité.</p>
+                        <button type="button" onclick="openModal('tetris')" class="btn-card">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 — Ahou Valerie Kouakou</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
